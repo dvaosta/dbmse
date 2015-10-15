@@ -118,7 +118,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="Text.txt" />
+    <ClInclude Include="include\items\Query.h" />
+    <ClInclude Include="include\pipeline\Optimizer.h" />
+    <ClInclude Include="include\pipeline\Pipeline_stage.h" />
+    <ClInclude Include="include\utils\Tree.h" />
+    <ClInclude Include="include\utils\Tree_node.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="dbmse.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="docs\ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\items\Query.cpp" />
+    <ClCompile Include="src\pipeline\Optimizer.cpp" />
+    <ClCompile Include="src\pipeline\Pipeline_stage.cpp" />
+    <ClCompile Include="src\utils\Tree.cpp" />
+    <ClCompile Include="src\utils\Tree_node.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
