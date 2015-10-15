@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Pipeline_stage&lt;IN, OUT&gt;">
+    <Position X="4.5" Y="0.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAIEAIAAAAAAAAAAAAAAIAAAEAQAQAAAAAAAAAAAA=</HashCode>
+      <FileName>include\pipeline\Pipeline_stage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Optimizer">
+    <Position X="6.25" Y="1.25" Width="1.25" />
+    <InheritanceLine Type="Pipeline_stage&lt;IN, OUT&gt;">
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.089" Y="0.091" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAEAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\pipeline\Optimizer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Query">
+    <Position X="1" Y="1" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Query::supported_statements" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>include\items\Query.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAQAAAgAAAAoAAACAAA=</HashCode>
+      <FileName>include\items\Query.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tree&lt;T&gt;" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAgAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>include\utils\Tree.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tree_node&lt;T&gt;" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAACABAAAAQAAgQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\utils\Tree_node.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
