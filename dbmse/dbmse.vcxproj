@@ -68,12 +68,16 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <CodeAnalysisRuleSet>C:\Program Files (x86)\Microsoft Visual Studio 14.0\Team Tools\Static Analysis Tools\Rule Sets\NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <EnablePREfast>true</EnablePREfast>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -121,8 +125,11 @@
     <ClInclude Include="include\items\Query.h" />
     <ClInclude Include="include\pipeline\Optimizer.h" />
     <ClInclude Include="include\pipeline\Pipeline_stage.h" />
+    <ClInclude Include="include\utils\Algebraic_tree_node.h" />
+    <ClInclude Include="include\utils\Binary_tree_node.h" />
     <ClInclude Include="include\utils\Tree.h" />
     <ClInclude Include="include\utils\Tree_node.h" />
+    <ClInclude Include="include\utils\utils.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
@@ -130,15 +137,18 @@
     <ResourceCompile Include="dbmse.rc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="docs\ClassDiagram.cd" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="src\items\Query.cpp" />
     <ClCompile Include="src\pipeline\Optimizer.cpp" />
     <ClCompile Include="src\pipeline\Pipeline_stage.cpp" />
+    <ClCompile Include="src\utils\Algebraic_tree_node.cpp" />
+    <ClCompile Include="src\utils\Binary_tree_node.cpp" />
+    <ClCompile Include="src\utils\utils.cpp" />
     <ClCompile Include="src\utils\Tree.cpp" />
     <ClCompile Include="src\utils\Tree_node.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="docs\ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

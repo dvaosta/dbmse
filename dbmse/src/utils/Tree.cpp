@@ -1,10 +1,10 @@
 #include "..\..\include\utils\Tree.h"
 
 
-template<typename T>
-Tree<T>::Tree() {
+template <template <typename Type> class Node_type, typename T>
+Tree<Node_type, T>::Tree() {
 }
 
-template<typename T>
-Tree<T>::~Tree() {
+template <template <typename Type> class Node_type, typename T>
+Tree<Node_type, T>::~Tree() {
 }

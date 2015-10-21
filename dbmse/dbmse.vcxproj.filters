@@ -36,14 +36,20 @@
     <ClInclude Include="include\utils\Tree_node.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
+    <ClInclude Include="include\utils\Binary_tree_node.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utils\utils.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utils\Algebraic_tree_node.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="dbmse.rc">
       <Filter>File di risorse</Filter>
     </ResourceCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="docs\ClassDiagram.cd" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -64,5 +70,17 @@
     <ClCompile Include="src\utils\Tree_node.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
+    <ClCompile Include="src\utils\Binary_tree_node.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\utils.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\Algebraic_tree_node.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="docs\ClassDiagram.cd" />
   </ItemGroup>
 </Project>

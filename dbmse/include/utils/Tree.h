@@ -2,10 +2,10 @@
 
 #include "Tree_node.h"
 
-template<typename T>
+template <template <typename Type> class Node_type, typename T>
 class Tree {
 protected:
-	Tree_node<T> root;
+	Node_type<T> root;
 public:
 	Tree();
 	~Tree();
